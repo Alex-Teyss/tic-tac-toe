@@ -22,7 +22,7 @@ def check_for_winner():
             == buttons[row][2]["text"]
             != ""
         ):
-            tk.messagebox.showinfo(
+            messagebox.showinfo(
                 "Tic Tac Toe", f"Player {buttons[row][0]['text']} wins!"
             )
             game_over = True
@@ -36,7 +36,7 @@ def check_for_winner():
             == buttons[2][col]["text"]
             != ""
         ):
-            tk.messagebox.showinfo(
+            messagebox.showinfo(
                 "Tic Tac Toe", f"Player {buttons[0][col]['text']} wins!"
             )
             game_over = True
